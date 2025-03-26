@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Zing MP3 Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #181818;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .sidebar h2 {
+            color: #ff4da6;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 10px 0;
+        }
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .main-content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+        .music-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .music-card {
+            background-color: #242424;
+            padding: 15px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .music-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .music-card:hover {
+            transform: scale(1.05);
+        }
+        .container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: rgb(0, 0, 0);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-user:hover {
+  color: #eee;
+}
+.music-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: rgb(27, 24, 24);
+}
+
+.music-container:hover .overlay {
+  opacity: 0.8;
+}
+
+.icon {
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.fa-user:hover {
+  color: #eee;
+}
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Zing MP3</h2>
+        <ul>
+            <li><a href="#"><i class="fas fa-compass"></i> Khám Phá</a></li>
+            <li><a href="#"><i class="fas fa-hashtag"></i> #zingchart</a></li>
+            <li><a href="#"><i class="fas fa-podcast"></i> Radio</a></li>
+            <li><a href="#"><i class="fas fa-chart-line"></i> BXH Nhạc Mới</a></li>
+            <li><a href="#"><i class="fas fa-list"></i> Chủ Đề & Thể Loại</a></li>
+            <li><a href="#"><i class="fas fa-trophy"></i> Top 100</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>Gợi Ý Cho Bạn</h1>
+          
+        <div class="music-section">
+            <div class="music-card">
+                <div class="music-container">
+                    <img src="https://i.scdn.co/image/ab67616d0000b2737827895c48fd8598a3507494" alt="Avatar" class="image">
+                    <div class="overlay">
+                    <a href="#" class="icon">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <i class="fa fa-heart-o" aria-hidden="true" style="font-size: 15px; margin-right: 20px;"></i>
+                            <i class="fa fa-play" aria-hidden="true" style="font-size: 40px; margin-right: 20px;"></i>
+                            <i class="fa fa-share" aria-hidden="true" style="font-size: 20px"></i>
+                        </div>
+                    </a>
+                    </div>
+                  </div>
+                  <p>Citrus Love</p>
+            </div>
+            <div class="music-card">
+                <div class="music-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdCiqDWvtN-mLc3naOMuBH7mf3PesDj6lcfQ&s" alt="Avatar" class="image">
+                    <div class="overlay">
+                    <a href="#" class="icon">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <i class="fa fa-heart-o" aria-hidden="true" style="font-size: 20px; margin-right: 20px;"></i>
+                            <i class="fa fa-play" aria-hidden="true" style="font-size: 40px; margin-right: 20px;"></i>
+                            <i class="fa fa-share" aria-hidden="true" style="font-size: 20px"></i>
+                        </div>
+                    </a>
+                    </div>
+                  </div>
+                  <p>cơn mưa ngang qua
+                  </p>
+            </div>
+            <div class="music-card">
+                <div class="music-container">
+                    <img src="https://i.ytimg.com/vi/MkWINBXf0Lg/maxresdefault.jpg" alt="Avatar" class="image">
+                    <div class="overlay">
+                    <a href="#" class="icon">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <i class="fa fa-heart-o" aria-hidden="true" style="font-size: 15px; margin-right: 20px;"></i>
+                            <i class="fa fa-play" aria-hidden="true" style="font-size: 40px; margin-right: 20px;"></i>
+                            <i class="fa fa-share" aria-hidden="true" style="font-size: 20px"></i>
+                        </div>
+                    </a>
+                    </div>
+                  </div>
+                <p>Fire Inside</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
